@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: gateway-service
+
+#\u81EA\u5B9A\u4E49\u8DEF\u7531\u89C4\u5219
+zuul:
+  routes:
+    goods-service: /gateway/goods/**
+    order-service: /gateway/order/**
+    ##\u5FFD\u7565\u4E00\u4E9B\u8BBF\u95EE\u8DEF\u5F84\uFF0C\u8981\u6C42\uFF0C\u4E0D\u5141\u8BB8\u76F4\u63A5\u670D\u52A1\uFF0C\u5FC5\u987B\u901A\u8FC7\u6307\u5B9A\u7684\u89C4\u5219\u8C03\u7528\u670D\u52A1
+  ignored-patterns: /*-service/**
+  sensitive-headers:
+server:
+  port: 9000
