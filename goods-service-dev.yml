@@ -14,7 +14,7 @@ spring:
     host: localhost    
 env: dev
 branch: master
-msg: hello..................kkkkkkkkkkkkkkkkkkkk
+msg: hello..................333333333333333333333
 
 management:
   endpoints:
